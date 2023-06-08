@@ -31,11 +31,11 @@ jobs:
       run: mvn -B test --file TemelHesaplama2/pom.xml
     
     - name: Add coverage to PR
-      id: jacoco 
+      id: jacoco
       uses: madrapps/jacoco-report@v1.3
       with:
         paths: ${{ github.workspace }}/TemelHesaplama2/target/site/jacoco/jacoco.xml
-        token: ${{ secrets.GİTHUB_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         min-coverage-overall: 40
         min-coverage-changed-files: 60
         
