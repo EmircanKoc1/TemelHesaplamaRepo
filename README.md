@@ -1,0 +1,3 @@
+# TemelHesaplamaRepo
+
+Demo Proje
